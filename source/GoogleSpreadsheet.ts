@@ -117,14 +117,14 @@ export default class GoogleSpreadsheet {
         const googleRanges: string[] = [];
         for (const range of ranges) { googleRanges.push(range.a1); }
         const response = await this._handle.spreadsheets.values.batchGet({ spreadsheetId: this.id, ranges: googleRanges });
-        const results = [];
+        const results: { range: GoogleSheetRange, values: any[][] }[] = [];
         for (const valueRange of response.data.valueRanges) {
             const range = new GoogleSheetRange({ a1: valueRange.range });
             results.push({ range, values: valueRange.values });
         }
         return results;
     }
-
+    
     private async _getInformation() {
         const response = await this._handle.spreadsheets.get({ spreadsheetId: this.id });
         return response.data;
