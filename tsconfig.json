@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ESNext",
+        "moduleResolution": "Node16",
+        "esModuleInterop": true,
+        "outDir": "build",
+        "declaration": true
+    },
+    "typeAcquisition": {
+        "enable": false
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "name": "google-toolbox",
+    "version": "1.0.0",
+    "description": "A toolbox to that wraps some popular Google APIs to make them more intuitive to use.",
+    "main": "build/index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JeremyBankes/google-toolbox.git"
+    },
+    "keywords": [
+        "Google",
+        "Wrapper",
+        "Toolbox"
+    ],
+    "author": "Jeremy Bankes",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/JeremyBankes/google-toolbox/issues"
+    },
+    "homepage": "https://github.com/JeremyBankes/google-toolbox#readme",
+    "dependencies": {
+        "@jeremy-bankes/toolbox": "^1.5.9",
+        "google-auth-library": "^8.4.0",
+        "googleapis": "^107.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^18.7.13",
+        "typescript": "^4.7.4"
+    }
+}
